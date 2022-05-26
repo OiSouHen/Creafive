@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>w_ex_brick</modelName>
+			<txdName>w_ex_brick</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+
