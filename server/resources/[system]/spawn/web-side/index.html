@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>#creative</title>
+		<link rel="stylesheet" href="css.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<div id="charPage"></div>
+		<div id="spawnPage"></div>
+		<div id="createPage">
+			<div id="createCharForm">
+				<div class="buttonGroup" id="gender">
+					<div class="buttonsBox">
+						<button type="button" class="active" id="mp_m_freemode_01">Masculino</button>
+						<button type="button" id="mp_f_freemode_01">Feminino</button>
+					</div>
+				</div>
+
+				<input class="formInput" autocomplete="off" onKeyPress="if(this.value.length==16) return false;" value="" type="text" id="charNome" placeholder="Nome">
+				<input class="formInput" autocomplete="off" onKeyPress="if(this.value.length==16) return false;" value="" type="text" id="charSobrenome" placeholder="Sobrenome">
+
+				<div class="buttonGroup" id="locate">
+					<div class="buttonsBox">
+						<button type="button" class="active" id="Sul">Sul</button>
+						<button type="button" id="Norte">Norte</button>
+					</div>
+				</div>
+
+				<button class="fnButton" id="createNew">CONFIRMAR</button>
+				<button class="fnButton" id="createBack">CANCELAR</button>
+			</div>
+		</div>
+
+		<script src="jquery.js"></script>
+	</body>
+</html>

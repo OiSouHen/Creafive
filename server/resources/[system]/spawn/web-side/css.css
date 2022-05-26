@@ -1,0 +1,216 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap);
+
+*,
+body {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: Montserrat;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+:focus, body:focus {
+	outline: 0;
+}
+
+#charPage, #createPage, #spawnPage {
+	top: 60px;
+	left: 60px;
+	display: none;
+	position: absolute;
+}
+
+#spawnPage {
+	min-width: 300px;
+}
+
+#spawnPage .spawnBox {
+	border: 0;
+	color: #ccc;
+	width: 300px;
+	height: 50px;
+	display: flex;
+	font-size: 13px;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	align-items: center;
+	border-radius: 3px;
+	justify-content: center;
+	text-transform: uppercase;
+	background: rgba(15,15,15,.75);
+}
+
+#spawnPage .spawnBox:hover {
+	background-color: rgba(15,15,15,.90);
+}
+
+#spawnPage #spawnNew {
+	border: 0;
+	color: #ccc;
+	width: 300px;
+	height: 60px;
+	display: flex;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 3px;
+	align-items: center;
+	letter-spacing: 2px;
+	background: #2e6e4c;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+#charPage .charBox, #charPage .charNew {
+	margin-bottom: 10px;
+}
+
+#charPage .charNew {
+	width: 260px;
+	height: 80px;
+	display: flex;
+	color: #fafafa;
+	padding: 0 20px;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #2e6e4c;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#charPage .charNew p {
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+#charPage .charNew o {
+	font-size: 11px;
+	opacity: 0.75;
+}
+
+#charPage .charNew p:first-child {
+	font-weight: 600;
+}
+
+#charPage .charBox {
+	color: #ccc;
+	height: 80px;
+	display: flex;
+	padding: 0 20px;
+	cursor: pointer;
+	min-width: 230px;
+	border-radius: 3px;
+	flex-direction: row;
+	align-items: center;
+	background: rgba(15,15,15,.90);
+	justify-content: space-between;
+}
+
+#charPage .charBox .playerInfo {
+	display: flex;
+	line-height: 20px;
+	margin-right: 10px;
+	letter-spacing: 1px;
+	flex-direction: column;
+}
+
+#charPage .charBox .playerInfo p {
+	font-size: 11px;
+}
+
+#charPage .charBox .playerInfo p b {
+	font-weight: 600;
+}
+
+#charPage .charBox .playerInfo p:last-child {
+	padding-bottom: 0;
+}
+
+#charPage .charBox .playerButton {
+	color: #8ebda3;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 10px 10px;
+	letter-spacing: 1px;
+	background: #2e6e4c;
+	font-family: "Roboto";
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+#createCharForm {
+	display: flex;
+	flex-direction: column;
+}
+
+#createCharForm .formInput {
+	border: 0;
+	color: #ccc;
+	width: 260px;
+	height: 50px;
+	padding: 0 20px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+	border-radius: 3px;
+	background: rgba(15,15,15,.75);
+}
+
+#createCharForm .formInput::placeholder {
+	color: #ccc;
+}
+
+#createCharForm .fnButton {
+	border: 0;
+	color: #ccc;
+	width: 300px;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 10px;
+	letter-spacing: 2px;
+	border-radius: 3px;
+}
+
+#createCharForm .fnButton#createNew {
+	background: #2e6e4c;
+}
+
+#createCharForm .fnButton#createBack {
+	background: #7c344d;
+}
+
+#createCharForm .buttonGroup {
+	width: 300px;
+	margin-top: 10px;
+}
+
+#createCharForm .buttonGroup:first-child {
+	margin-top: 0;
+}
+
+#createCharForm .buttonGroup .buttonsBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#createCharForm .buttonGroup .buttonsBox button {
+	border: 0;
+	color: #ccc;
+	width: 145px;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 3px;
+	letter-spacing: 2px;
+	background: rgba(15,15,15,.75);
+}
+
+#createCharForm .buttonGroup .buttonsBox button.active {
+	background: rgba(15,15,15,.90);
+}
