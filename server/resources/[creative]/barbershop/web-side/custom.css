@@ -1,0 +1,382 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.openBarbershop {
+    display: none;
+}
+
+#cursorPointer {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #20232e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #11141d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #11141d;
+}
+
+#barbershop-limiter {
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+#barbershop-limiter .barbershop-container {
+    height: 100vh;
+    background-color: #323644;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#barbershop-limiter .barbershop-container .menu-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#barbershop-limiter .barbershop-container .menu-area .menu-item {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    background: #222533;
+    padding: 15px 0;
+    font-size: 11px;
+    font-weight: 400;
+    color: #A8AFC6;
+    letter-spacing: 1px;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+
+#barbershop-limiter .barbershop-container .menu-area .menu-item:first-child svg {
+    height: 28px;
+    fill: #A8AFC6;
+    margin: auto 0;
+}
+
+#barbershop-limiter .barbershop-container .menu-area .menu-item svg {
+    height: 34px;
+    fill: #A8AFC6;
+    margin-bottom: 6px;
+}
+
+#barbershop-limiter .barbershop-container .menu-area .menu-item.active {
+    background: #11141d;
+}
+
+#barbershop-limiter .barbershop-container .content-area {
+    height: 100%;
+    overflow: auto;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator {
+    display: none;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator.active {
+    display: block;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator .option-group {
+    padding: 30px 23px 30px 30px;
+    border-bottom: 1px solid rgba(107, 113, 132, 0.3);
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator .option-group .option-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator .option-group .option-input:last-child {
+    margin-bottom: 0px;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator .option-group .option-input label {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #A8AFC6;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator .option-group .option-input .input-field {
+    background: #222533;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator .option-group .option-input .input-field i {
+    color: #6B7184;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator .option-group .option-input .input-field i:first-child {
+    margin-right: 10px;
+}
+
+#barbershop-limiter .barbershop-container .content-area .option-separator .option-group .option-input .input-field i:last-child {
+    margin-left: 10px;
+}
+
+#barbershop-limiter .barbershop-container .submit-area .submit-button {
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #95c5ab;
+    text-transform: uppercase;
+    background-color: #2E6E4C;
+}
+
+@media (max-width: 1280px) {
+    #barbershop-limiter .barbershop-container {
+        width: 330px;
+    }
+
+    #barbershop-limiter .barbershop-container .submit-area .submit-button {
+        padding: 15px 0;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px) {
+    #barbershop-limiter .barbershop-container {
+        width: 330px;
+    }
+
+    #barbershop-limiter .barbershop-container .submit-area .submit-button {
+        padding: 15px 0;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1600px) {
+    #barbershop-limiter .barbershop-container {
+        width: 360px;
+    }
+
+    #barbershop-limiter .barbershop-container .submit-area .submit-button {
+        padding: 20px 0;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+    #barbershop-limiter .barbershop-container {
+        width: 360px;
+    }
+
+    #barbershop-limiter .barbershop-container .submit-area .submit-button {
+        padding: 20px 0;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2160px) {
+    #barbershop-limiter .barbershop-container {
+        width: 360px;
+    }
+
+    #barbershop-limiter .barbershop-container .submit-area .submit-button {
+        padding: 20px 0;
+        font-size: 17px;
+    }
+}
+
+input {
+    background-color: transparent;
+    width: 100%;
+}
+
+/*generated with Input range slider CSS style generator (version 20210711)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].styled-slider {
+    height: 15px;
+    -webkit-appearance: none;
+}
+
+/*progress support*/
+input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 8px + var(--ratio) * (100% - 8px));
+}
+
+input[type=range].styled-slider:focus {
+    outline: none;
+}
+
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb {
+    width: 8px;
+    height: 10px;
+    background: #C7CCDA;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: calc(6px * 0.5 - 10px * 0.5);
+    -webkit-appearance: none;
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #A8AFC6;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: -webkit-gradient(linear, left top, left bottom, from(#6B7184), to(#6B7184)) 0/var(--sx) 100% no-repeat, #A8AFC6;
+    background: linear-gradient(#6B7184, #6B7184) 0/var(--sx) 100% no-repeat, #A8AFC6;
+}
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb {
+    width: 8px;
+    height: 10px;
+    background: #C7CCDA;
+    border: none;
+    box-shadow: none;
+}
+
+input[type=range].styled-slider::-moz-range-track {
+    height: 6px;
+    background: #A8AFC6;
+    border: none;
+    box-shadow: none;
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+    background: linear-gradient(#6B7184, #6B7184) 0/var(--sx) 100% no-repeat, #A8AFC6;
+}
+
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-thumb {
+    width: 8px;
+    height: 10px;
+    background: #C7CCDA;
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+input[type=range].styled-slider::-ms-track {
+    height: 6px;
+    background: #A8AFC6;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+    height: 6px;
+    margin: -undefined 0 -undefined -undefined;
+    background: #6B7184;
+    border: none;
+    border-right-width: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*# sourceMappingURL=custom.css.map */

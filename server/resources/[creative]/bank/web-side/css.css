@@ -1,0 +1,74 @@
+:focus { outline: 0; }
+::-webkit-scrollbar { width: 0; }
+::placeholder { color: #ccc; letter-spacing: 2px; }
+::selection { background: transparent; color: #ccc; }
+::-moz-selection { background: transparent; color: #ccc; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 13px;
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+* {
+	overflow: hidden;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+#body {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+#content {
+	width: 390px;
+	padding: 20px;
+	border-radius: 3px;
+	background: rgba(15,15,15,.75);
+}
+
+#deposit {
+	color: #a0ceb6;
+	float: left;
+	width: 190px;
+	padding: 16px;
+	font-size: 18px;
+	border-radius: 3px;
+	margin-right: 10px;
+	text-align: center;
+	background: #2e6e4c;
+	letter-spacing: 2px;
+}
+
+#withdraw {
+	color: #a0ceb6;
+	float: left;
+	width: 150px;
+	padding: 16px;
+	font-size: 18px;
+	border-radius: 3px;
+	text-align: center;
+	background: #2e6e4c;
+	letter-spacing: 2px;
+}
+
+#value {
+	border: 0;
+	color: #ccc;
+	width: 350px;
+	padding: 20px;
+	font-size: 18px;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	background: rgba(15,15,15,.75);
+}

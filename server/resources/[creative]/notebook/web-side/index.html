@@ -1,0 +1,76 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#creative</title>
+
+    <link rel="stylesheet" href="css.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="display-limiter">
+        <div class="tablet-container">
+            <header>
+                <p>LAPTOP</p>
+                <p>VEHICLE PERFORMANCE MOBILE</p>
+            </header>
+            <section>
+                <div class="values-field">
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="boost">PROPULSÃO</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="boost" class="styled-slider slider-progress" min="0.1" max="0.30" value="0.25" step="0.01">
+                    </div>
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="fuelmix">COMBINAÇÃO DE COMBUSTÍVEIS</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="fuelmix" class="styled-slider slider-progress" min="1" max="1.6" value="1.3" step="0.01">
+                    </div>
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="gearchange">VARIAÇÃO DE VELOCIDADE</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="gearchange" class="styled-slider slider-progress" min="1" max="15" value="9">
+                    </div>
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="braking">FRENAGEM</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="braking" class="styled-slider slider-progress" max="1" value="0.5" step="0.05">
+                    </div>
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="brakeforce">FORÇA DE FRENAGEM</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="brakeforce" class="styled-slider slider-progress" max="1.5" value="1.4" step="0.05">
+                    </div>
+                    <div class="field-area">
+                        <div class="text">
+                            <label for="drivetrain">SISTEMA DE TRAÇÃO</label>
+                            <p class="value"></p>
+                        </div>
+                        <input type="range" id="drivetrain" class="styled-slider slider-progress" max="0.75" value="0.5" step="0.05">
+                    </div>
+                </div>
+                <div class="button-field">
+                    <button id="savebtn">Salvar</button>
+                    <button id="defaultbtn">Padrão</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+</body>
+
+</html>

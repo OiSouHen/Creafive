@@ -1,0 +1,81 @@
+::-webkit-scrollbar { display: none; }
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+* {
+	overflow: hidden;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+#notifyitens {
+	width: 100%;
+	height: 95%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.item {
+	width: 115px;
+	height: 145px;
+	display: flex;
+	border-radius: 3px;
+	margin-right: 10px;
+	flex-direction: column;
+	text-shadow: 1px 1px #000;
+	background: rgba(15,15,15,.75);
+	background-size: 86% !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+
+.item .top {
+	display: flex;
+	color: #8c8c8c;
+	font-size: .65rem;
+	justify-content: space-between;
+}
+
+.item .nameItem {
+	width: 100%;
+	color: #CCC;
+	margin-top: 87px;
+	font-size: .68rem;
+	padding: 8px 10px;
+	text-align: center;
+	align-self: center;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	background: #111;
+}
+
+.itemWeight {
+	color: #333;
+	padding: 8px;
+	font-size: .60rem;
+	position: absolute;
+	letter-spacing: 1px;
+	text-shadow: 0 0 #000;
+	text-transform: uppercase;
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background: rgba(255,255,255,0.75);
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+.itemAmount {
+	color: #999;
+	width: 115px;
+	font-size: .70rem;
+	text-align: right;
+	padding: 15px 15px 0 0;
+}

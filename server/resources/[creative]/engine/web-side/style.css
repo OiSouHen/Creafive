@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	color: #ccc;
+	font-size: 13px;
+	overflow: hidden;
+	font-family: "Roboto";
+	background: transparent;
+}
+
+#fuelMenu {
+	left: 50px;
+	bottom: 50px;
+	width: 275px;
+	display: none;
+	padding: 30px;
+	border-radius: 3px;
+	position: absolute;
+	background-position: top;
+	background-repeat: no-repeat;
+	background: url("background.png") rgba(15,15,15,.75);
+}
+
+.title {
+	color: #fff;
+	float: left;
+	width: 275px;
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.legends {
+	color: #ccc;
+	float: left;
+	opacity: .75;
+	width: 275px;
+	font-size: 9px;
+	letter-spacing: 2px;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+}
+
+.fuelButton {
+	float: left;
+	width: 100px;
+	font-size: 16px;
+}
+
+.fuelStats {
+	float: left;
+	width: 100px;
+	font-size: 14px;
+}
+
+#tank {
+	color: #64b4f1;
+	padding-top: 6px;
+}
+
+#price {
+	color: #a0ceb6;
+	padding-top: 6px;
+}
+
+#lts {
+	width: 75px;
+	color: #e1c256;
+	padding-top: 6px;
+}

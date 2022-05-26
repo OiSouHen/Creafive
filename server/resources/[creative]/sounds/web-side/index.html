@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>#creative</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+		<script>
+			var audioPlayer = null;
+			window.addEventListener('message',function(event){
+				if (event.data.transactionType == "playSound"){
+					if (audioPlayer != null){ audioPlayer.pause(); }
+					audioPlayer = new Audio("./sounds/"+event.data.transactionFile+".ogg");
+					audioPlayer.volume = event.data.transactionVolume;
+					audioPlayer.play();
+				}
+			});
+		</script>
+	</head>
+</html>

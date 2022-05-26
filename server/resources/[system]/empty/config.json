@@ -1,0 +1,37 @@
+{
+	"token": "e6071a213189ecacc66d79c2f55e967a06b0ed69f69a5e3ef73d89f698bee354",
+	"command": "fval",
+	"mysql": {
+		"host": "127.0.0.1",
+		"port": 3306,
+		"database": "creative",
+		"user": "root",
+		"password": "8905035755"
+	},
+	"snowflake": {
+		"database_prefix": "summerz",
+		"vehicles": "summerz_vehicles",
+		"priority": "vrp_priority",
+		"homes": "summerz_property",
+		"esx": {
+			"admin_group": "admin",
+			"default_group": "unemployed",
+			"vehicle_plate": "AAA 000"
+		}
+	},
+	"requireOnlineToDelivery": false,
+	"plugins": ["disable-vip-command","summerz","ignore-billboard","ignore-plan"],
+	"chat": {
+		"enabled": false,
+		"global": false,
+		"color": "#ffa852",
+		"format": ":name comprou :product."
+	},
+	"nui": {
+		"enabled": false,
+		"title": "Parabéns, :name",
+		"subtitle": "Você acabou de adquirir :product"
+	},
+	"messages": {},
+	"webhook": "https://discord.com/api/webhooks/910149150421696513/wlHjZ6fG_Sj7lVxwYV757_9nrCPQJIOZJdh1YQdj3BiPMVPbY3ABXVgGhNUs8jNsMdTN"
+}

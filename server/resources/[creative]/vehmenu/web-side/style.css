@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	color: #ccc;
+	font-size: 13px;
+	overflow: hidden;
+	font-family: "Roboto";
+	background: transparent;
+}
+
+#vehicleMenu {
+	left: 18%;
+	bottom: 50px;
+	display: none;
+	cursor: default;
+	max-width: 500px;
+	position: absolute;
+}
+
+.vehicleButton {
+	float: left;
+	width: 150px;
+	margin-top: 5px;
+	margin-right: 5px;
+	border-radius: 3px;
+	padding: 10px 15px;
+	background: rgba(15,15,15,.75);
+}
+
+.vehicleButton:hover {
+	color: #a0ceb6;
+	background: #2e6e4c;
+}

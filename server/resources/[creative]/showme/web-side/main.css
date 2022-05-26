@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: 1px;
+	font-family: "Roboto";
+}
+
+* {
+	overflow: hidden;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+.message {
+	color: #ccc;
+	max-width: 250px;
+	border-radius: 3px;
+	padding: 10px 13px;
+	position: absolute;
+	word-wrap: break-word;
+	background: rgba(15,15,15,0.75);
+}
+
+yellow {
+	color: #ad9d2c;
+}

@@ -1,0 +1,134 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	overflow: hidden;
+	background: transparent;
+	font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+* {
+	overflow: hidden;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+#displayRanking {
+	top: 400px;
+	right: 50px;
+	color: #ccc;
+	width: 515px;
+	display: none;
+	text-align: left;
+	line-height: 30px;
+	letter-spacing: 2px;
+	padding: 30px 20px 15px;
+	text-shadow: 1px 1px #000;
+	position: absolute !important;
+	background: rgba(15,15,15,.50);
+}
+
+#raceTitle {
+	line-height: 15px;
+	font-size: 20px;
+	width: 475px;
+	float: left;
+}
+
+#raceLegend {
+	margin-bottom: 10px;
+	font-size: 11px;
+	width: 475px;
+	float: left;
+	color: #999;
+}
+
+#raceButtom {
+	text-align: right;
+	font-size: 11px;
+	color: #777777;
+	width: 475px;
+	float: left;
+}
+
+#raceLine {
+	background: rgba(15,15,15,.50);
+	margin-bottom: 5px;
+	width: 475px;
+	float: left;
+}
+
+.racePosition {
+	float: left;
+	width: 40px;
+	color: #a0ceb6;
+	padding: 3px 0;
+	text-shadow: none;
+	text-align: center;
+	background: #2e6e4c;
+}
+
+.raceName {
+	float: left;
+	width: 190px;
+	padding: 3px 0;
+	padding-left: 10px;
+}
+
+.raceVehicle {
+	color: #888;
+	float: left;
+	width: 135px;
+	padding: 3px 0;
+}
+
+.racePoints {
+	color: #888;
+	float: left;
+	width: 100px;
+	padding: 3px 0;
+}
+
+key {
+	color: #ccc;
+}
+
+#displayRunners {
+	left: 53px;
+	bottom: 250px;
+	display: none;
+	color: #939393;
+	text-align: left;
+	line-height: 30px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px #000;
+	position: absolute !important;
+}
+
+#displayRunners s {
+	width: 120px;
+	float: right;
+	color: #e5e5e5;
+	font-size: 20px;
+	text-align: right;
+	text-decoration: none;
+	font-family: "Jura",sans-serif;
+}
+
+#raceContent {
+	right: 0;
+	width: 345px;
+	bottom: 320px;
+	display: none;
+	color: #c6c6c6;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px #000;
+	background: rgba(0,0,0,0.5);
+	padding: 15px 15px 15px 10px;
+	position: absolute !important;
+}
+
+#raceLine {
+	float: left;
+}

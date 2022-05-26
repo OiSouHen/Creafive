@@ -1,0 +1,46 @@
+body, * {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.circlewrap {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.circlewrap > svg {
+	transform: rotate(-90deg);
+	margin-top: 30%;
+}
+
+.letters {
+	z-index: 9;
+	margin-top: 30%;
+	font-size: 50px;
+	font-weight: 900;
+	position: absolute;
+	font-family: "Roboto";
+	color: rgba(255,255,255,0.75);
+}
+
+#backline {
+	stroke: rgba(15,15,15,0.75);
+}
+
+#skillprogress {
+	stroke: #ccc;
+	stroke-dasharray: 100;
+	stroke-dashoffset: calc(100 - var(--val));
+}
+
+#skillgap {
+	stroke: #fff;
+	stroke-dasharray: 100;
+	stroke-dashoffset: calc(100 - var(--val));
+	transform-box: fill-box;
+	transform-origin: center;
+}
