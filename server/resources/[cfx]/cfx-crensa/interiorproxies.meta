@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+	<startFrom value="4001" />
+	<filePathHash value="0" />
+	<proxies>
+		<Item>bs_int</Item>
+		<Item>zn_fishing_mlo</Item>
+		<Item>lr_cs6_03_interior_v_carmod3_milo_</Item>
+		<Item>gabz_pillbox_milo_</Item>
+		<Item>gabz_pillbox_dlc_milo_</Item>
+		<Item>int_genstore_milo_</Item>
+		<Item>rfc_mcbikers_milo_</Item>
+		<Item>v_clinick</Item>
+		<Item>brown_gunshop_milo_</Item>
+		<Item>gabz_mrpd_milo_</Item>
+		<Item>hei_dt1_19_interior_0_heist_police_dlc_milo_</Item>
+		<Item>sanhje_Prison_cafeteria_placement</Item>
+		<Item>sanhje_Prison_placement</Item>
+		<Item>sanhje_Prison_infirmary_placement</Item>
+		<Item>sanhje_prison_reception_placement</Item>
+		<Item>sanhje_parkranger_placement</Item>
+		<Item>denis3d_tunershop_milo_</Item>
+		<Item>int_shosp_milo_</Item>
+		<Item>np_town_hall_milo_</Item>
+		<Item>weazel_milo</Item>
+		<Item>int_italy2_milo_</Item>
+		<Item>interior_hospitalsandy_milo_</Item>
+		<Item>np_sandycloth_milo_</Item>
+		<Item>hedwig_sheriff_milo_</Item>
+		<Item>hedwig_sheriff_garage_milo</Item>
+	</proxies>
+</SInteriorOrderData>
