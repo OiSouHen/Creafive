@@ -3398,7 +3398,7 @@ function cRP.StealPeds()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		if (vRP.inventoryWeight(user_id) + 1) <= vRP.getBackpack(user_id) then
+		if (vRP.inventoryWeight(user_id) + 1) <= vRP.getWeight(user_id) then
 			local rand = math.random(#stealpedsitens)
 			local value = math.random(stealpedsitens[rand]["min"],stealpedsitens[rand]["max"])
 
