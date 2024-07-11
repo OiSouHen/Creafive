@@ -1,10 +1,12 @@
 # 📚 Hensa
 **Hensa** representa um coletivo composto por entusiastas dedicados à edição de conteúdo destinado à criação de servidores de roleplay para o jogo **Grand Theft Auto V**, utilizando a plataforma **FiveM**.
 
+Acesse o nosso **Website**: [Clique aqui para entrar](https://hensa.store/).
+
 -------
 
 ### 💬 Comunidade
-Maiores informações você só encontra em nosso **Discord**: [Clique aqui para entrar](https://discord.gg/Qhxnvc4Ehu).
+Maiores informações você só encontra em nosso **Discord**: [Clique aqui para entrar](https://hensa.store/discord).
 
 -------
 
@@ -14,4 +16,4 @@ Este conteúdo é distribuído sob a **Licença __MIT__**. Consulte o arquivo `L
 
 -------
 
-![Hensa](https://cdn.discordapp.com/attachments/1130691272848445530/1201996706351435796/2.2.png "Hensa")
+![Hensa](https://hensa.store/Mawu/image/LogoHensa.png "Hensa")
